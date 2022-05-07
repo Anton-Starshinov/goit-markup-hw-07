@@ -1,4 +1,4 @@
-.filters {
+   .filters {
     padding-top: 94px;
     padding-bottom: 94px;
    }
@@ -29,9 +29,9 @@
        background-color: #F5F4FA;
        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-   }
-   .filters-btn:hover, 
-   .filters-btn:focus {
-       color: #ffffff;
-       background-color: var(--accent-color);
+       &:hover, 
+       &:focus {
+           color: #ffffff;
+           background-color: var(--accent-color);
+       }
    }

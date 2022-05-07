@@ -1,4 +1,4 @@
-.footer {
+  .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -12,8 +12,6 @@
   }
   .footer-text{
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -21,8 +19,6 @@
     color: #FFFFFF;
   }
   .footer-mail, .footer-tel {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -30,11 +26,12 @@
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,&:hover,
+    &:focus, &:focus {
+    color: var(--accent-color);
+    }
   }
-  .footer-tel:hover,.footer-mail:hover,
-  .footer-tel:focus, .footer-mail:focus {
-  color: var(--accent-color);
-  }
+
   .footer-list {
   display: flex;
   }
@@ -47,15 +44,13 @@
   flex-direction: column;
   }
   .footer-soc-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-  }
-  .footer-soc-title {
-    margin-bottom: 20px;
   }
   .footer-soc-link {
     width: 44px;
@@ -67,11 +62,12 @@
     justify-content: center;
     fill: #FFFFFF;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+      background-color: var(--accent-color);
+      fill: #ffffff;
+    }
   }
-  .footer-soc-link:hover, .footer-soc-link:focus {
-    background-color: var(--accent-color);
-    fill: #ffffff;
-  }
+
   .footer-aside {
     margin-left: 93px;
   }
@@ -116,18 +112,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-aside-btn:hover, .footer-aside-btn:focus {
-    color: #ffffff;
-    background-color: var(--accent-color);
+    &:hover, &:focus {
+      color: #ffffff;
+      background-color: var(--accent-color);
+    }
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-image: url(../images/icon\ send.svg);
+    }
   }
   .aside-box {
     display: flex;
-  }
-  .footer-aside-btn::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../images/icon\ send.svg);
   }
