@@ -1,3 +1,44 @@
+:root {
+  --header-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196F3;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.button {
+  cursor: pointer;
+}
+
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
