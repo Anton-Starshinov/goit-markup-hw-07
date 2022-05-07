@@ -49,8 +49,11 @@
     display: flex;
     justify-content: center;
   }
-  .command-soc-item + .command-soc-item {
-  margin-left: 10px;
+  .command-soc-item {
+    & + & {
+      margin-left: 10px;
+    }
+  
   }
   .command-soc-link {
     width: 44px;
